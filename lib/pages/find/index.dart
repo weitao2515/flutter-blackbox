@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'search.dart';
 import 'news.dart';
 import 'like.dart';
+import '../../component/avatar.dart';
+import '../../models/news.dart';
 class Find extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Bottom Navigation',
-      home: Container(
-        child: FindTitle(),
-      ),
-    );
+    return FindTitle();
   }
 }
 
@@ -167,10 +164,19 @@ class Recommend extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 100,
-      itemExtent: 50.0, //强制高度为50.0
+      itemCount: 10,
       itemBuilder: (BuildContext context, int index) {
-        return ListTile(title: Text("$index"));
+        return Column(
+          children: <Widget>[
+            Row(children: <Widget>[
+              Padding(
+                padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                child: LocalAvatar(),
+              ),
+              Text(nameList[index%7])
+            ],)
+          ],
+        );
       }
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './like/like_user.dart';
+import '../../models/news.dart';
 
 class Like extends StatelessWidget{
   @override
@@ -13,7 +14,7 @@ class Like extends StatelessWidget{
             scrollDirection: Axis.horizontal,
             itemCount: 8,
             itemBuilder: (BuildContext context, int index) {
-              return LikeUser();
+              return LikeUser(username: nameList[index],);
             }
           ),
         ),

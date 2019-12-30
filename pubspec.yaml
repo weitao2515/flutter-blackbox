@@ -48,6 +48,8 @@ flutter:
    - images/r6.png
    - images/lol.png
    - images/d2.png
+   - images/user/Aimyon.png
+   - images/user/Aimer.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

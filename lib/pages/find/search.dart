@@ -9,6 +9,7 @@ class FindSearch extends StatelessWidget{
         iconTheme:IconThemeData(color: Colors.black),
         title: TextField(
           style: TextStyle(color: Colors.grey),
+          autofocus:true,
           decoration: InputDecoration(
             hintText: "请输入搜索内容",
             prefixIcon: Icon(Icons.search,color: Colors.black,),
