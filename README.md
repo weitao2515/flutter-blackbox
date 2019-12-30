@@ -6,8 +6,9 @@
 - 不能在导航栏的页面中使用MaterialApp,跳转时会认为是同级别的
 
 2、切换tab栏保持状态:
-- 在组件后加上 
-$ with AutomaticKeepAliveClientMixin
-- 并且重写方法
-$ @override
-$ bool get wantKeepAlive => true;//切换保留tab状态
+``` bash
+$ class BarState extends State<Bar> with AutomaticKeepAliveClientMixin {
+$   @override
+$   bool get wantKeepAlive => true;//切换保留tab状态
+$ }
+```
