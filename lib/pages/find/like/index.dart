@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './like/like_user.dart';
-import '../../models/news.dart';
+import './like_user.dart';
+import '../../../models/news.dart';
 
 class Like extends StatelessWidget{
   @override

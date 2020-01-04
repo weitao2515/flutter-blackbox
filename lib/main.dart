@@ -28,7 +28,7 @@ class Homes extends StatefulWidget {
 class _HomesState extends State<Homes> {
   int _currentIndex = 0;
 
-  final List<Widget> _children = [Find(), Game(), Community(), User()];
+  final List<Widget> _children = [Community(),Find(), Game(),  User()];
 
 
   final List<BottomNavigationBarItem> _list = <BottomNavigationBarItem>[

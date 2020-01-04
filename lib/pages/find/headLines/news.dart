@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '../../models/news.dart';
+import '../../../models/news.dart';
 
 class NewsList extends StatefulWidget {
   NewsList({Key key, this.type}) : super(key: key);
@@ -129,7 +129,7 @@ class ContentNews extends StatelessWidget{
                       Row(
                         children: <Widget>[
                           Icon(Icons.message,size: 15,),
-                          Text(newsList[category].comment)
+                          Text(' '+newsList[category].comment)
                         ],
                       )
                     ],
